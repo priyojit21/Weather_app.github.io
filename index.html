@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="typewriter">
+    <h1>The Weather App . . .</h1>
+  </div>
+  <div>
+    <h2 class="animate-charcter">Weathify</h2>
+  </div>
+  <div class="container">
+    <!-- <video autoplay loop muted plays-inline class="back-video">
+      <source src="./3ffeb02c-43a757ed.mp4"></source>
+    </video> -->
+    <div class="row">
+      <form action="">
+        <input type="search" id="search" placeholder="Search by city name">
+      </form>
+    </div>
+    <div class="row des_cont" id="weather">
+      <div class="des">
+        <img
+          class="img" id = "im" src="https://openweathermap.org/img/wn/04n@2x.png"
+          alt="weather_icon">
+      </div>
+      <div class="text des">
+        <h1 id="temp">32 °C</h1>
+        <h3 id="type">Clear</h3>
+      </div> 
+    <div class="des_2 text">
+        <h2 id="humid">Humidity : 38 </h2>
+        <h2 id="speed">Wind-Speed : 70 </h2>
+    </div>
+    <div class="des_2 text">
+        <h2 id="feel">Feels_Like : 31 </h2>
+        <h2 id="press">Pressure : 70 </h2>
+    </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

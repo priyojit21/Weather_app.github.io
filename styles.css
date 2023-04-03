@@ -1,0 +1,170 @@
+/* adjusting image to take full screen */
+body {
+    background-image: url(./images/normal.jfif);
+    background-size: cover;
+    height: 100vh;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* dynamic typing effect */
+.typewriter h1 {
+    color: black;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+
+/* dynamic typing effect ends */
+h1 {
+    text-align: center;
+    position: relative;
+    top: 60px;
+}
+
+.container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    height: 100px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search {
+    height: 35px;
+    width: 90%;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+}
+
+.img {
+    width: 60px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+form {
+    position: relative;
+    left: 10px;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.text {
+    /* margin-bottom: 35px; */
+    color: black;
+    text-shadow: 0em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.des_cont {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    border: 3px solid black;
+    width: 800px;
+    border-style: double;
+    gap: 2px;
+    animation-name: example;
+    animation-duration: 10s;
+}
+@keyframes example {
+    0%   {background-color: #FFC3A1;}
+    25%  {background-color: #2DCDDF;}
+    50%  {background-color: #BFEAF5;}
+}
+
+.des {
+    margin-bottom: 60px;
+    margin-right: 5px;
+}
+
+.des_2 {
+    margin-left: 20px;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
